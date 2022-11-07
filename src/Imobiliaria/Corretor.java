@@ -62,7 +62,10 @@ public class Corretor extends Usuario{
         this.dataAdmissao = dataAdmissao;
     }
     
-    
+    @Override
+    public String toString(){
+        return super.toString()+"\nCRECI: "+creci+"\nSalario: "+salario+"\nPIS: "+pis+"\nData de admissao: "+dataAdmissao;
+    }
     
     
 }

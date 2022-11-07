@@ -30,5 +30,9 @@ public class Cliente extends Usuario {
     public void setDataCadastro(LocalDate dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
+
+    public String toString(){
+        return super.toString()+"\nData de cadastro: "+dataCadastro;
+    }
     
 }

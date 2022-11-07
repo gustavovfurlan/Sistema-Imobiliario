@@ -133,6 +133,10 @@ public class Imovel {
         this.valorAluguel = valorAluguel;
     }
     
-    
+    public String toString(){
+        return "Codigo do imovel: "+codigoImovel+"\nEndereco: "+endereco+"\nData de construcao: "+dataConstrucao+"\n Area total: "+areaTotal+
+        "\nArea construida: "+areaConstruida+"\nQuantidade de dormitorios: "+qtdDormitorios+"\nQuantidade de banheiros: "+qtdBanheiros+
+        "\nQuantidade de vagas na garagem: "+qtdVagasGaragem+"\nValor do IPTU: "+valorIPTU+"\nValor de venda: "+valorVenda+"\nValor do aluguel: "+valorAluguel;
+    }
     
 }

@@ -110,5 +110,9 @@ abstract class Usuario {
         this.email = email;
     }
     
-    
+    @Override
+    public String toString(){
+        return " Codigo do usuario: "+codigoUsuario+"\nNome: "+nome+"\nCPF: "+cpf+"\nRG: "+rg+
+        "\nData: "+dataNascimento+"\nEndereco: "+endereco+"\nCEP: "+cep+"\n Telefone: "+telefone+"\nTelefone: "+telefone; 
+    }
 }

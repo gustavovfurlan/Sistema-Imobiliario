@@ -14,5 +14,8 @@ public class Dinheiro extends Pagamento {
         super(tipoPagamento);
     }
     
-    
+    @Override
+    public String toString(){
+        return "Tipo de pagamento: "+tipoPagamento;
+    }
 }

@@ -23,6 +23,9 @@ public class Cartao extends Pagamento {
         this.numero = numero;
     }
     
-    
+    @Override
+    public String toString(){
+        return "Tipo de pagamento: "+tipoPagamento+"\nNome: "+nome+"\nBandeira: "+bandeira+"\nNumero do cartao: "+numero;
+    } 
     
 }

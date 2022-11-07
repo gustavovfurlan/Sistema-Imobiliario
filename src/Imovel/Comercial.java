@@ -36,6 +36,9 @@ public class Comercial extends Imovel {
         this.taxaImpostoFederal = taxaImpostoFederal;
     }
     
-    
+    @Override
+    public String toString(){
+        return super.toString()+"\nTaxa de imposto federal: "+taxaImpostoFederal;
+    }
     
 }

@@ -20,7 +20,7 @@ public class CasaResidencial extends Imovel {
     
     @Override
     public String toString(){
-        return super.toString()+"\n"
+        return super.toString();
     }
 
 }

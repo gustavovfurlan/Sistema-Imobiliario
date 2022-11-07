@@ -27,6 +27,6 @@ abstract class Pagamento {
     public void setTipoPagamento(String tipoPagamento) {
         this.tipoPagamento = tipoPagamento;
     }
-  
-    
+     
+    public abstract String toString();
 }

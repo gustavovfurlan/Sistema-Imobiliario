@@ -69,5 +69,8 @@ public class Seguro {
         this.valor = valor;
     }
     
-    
+    public String toString(){
+        return "\nCodigo do seguro: "+codigoSeguro+"\nNome da seguradora: "+nomeSeguradora+"\nTipo: "+tipo+
+        "\nDescricao: "+descricao+"\nValor: "+valor;
+    }
 }

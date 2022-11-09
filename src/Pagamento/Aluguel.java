@@ -27,13 +27,12 @@ public class Aluguel {
     private Pagamento formaPagamento;
     private ArrayList<Seguro> segurosContratados;
     private Boolean pago;
-    
+    String auxiliar; //Variavel para concatenar todos os itens do ArrayList
    
 
     @Override
     public String toString(){
         
-        String auxiliar; //Variavel para concatenar todos os itens do ArrayList
         
         for(Seguro SegAux : segurosContratados){
                     auxiliar = auxiliar.concat(segAux.toString()); 
@@ -43,7 +42,7 @@ public class Aluguel {
                 "\nImovel: "+imovel.toString()+"\nData do aluguel: "+this.dataAluguel+"\nData da devolucao: "+this.dataDevolucao+
                 "\nData do pagamento mensal: "+this.dataPagamentoMensal+"\nValor total do aluguel: "+this.valorTotalAluguel+
                 "\nForma de Pagamento: "+formaPagamento.toString()+"\nSeguros contratados: " +auxiliar 
-                + "Status do pagamento: " + ((pago) ? "Pago" : "Pendente");
+                + "\nStatus do pagamento: " + ((pago) ? "Pago" : "Pendente");
     }
     
     

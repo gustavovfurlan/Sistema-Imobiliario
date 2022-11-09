@@ -35,7 +35,7 @@ public class Aluguel {
         
         
         for(Seguro SegAux : segurosContratados){
-                    auxiliar = auxiliar.concat(segAux.toString()); 
+                    auxiliar = auxiliar.concat(SegAux.toString()); 
                 }
         
         return "Codigo do Aluguel: "+this.codigoAluguel+ "\nCliente: "+cliente.toString()+"\nCorretor: "+corretor.toString()+

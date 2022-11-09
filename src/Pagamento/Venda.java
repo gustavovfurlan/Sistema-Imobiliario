@@ -22,6 +22,14 @@ public class Venda {
     private LocalDate dataVenda;
     private float valorTotalVenda;
     private Pagamento formaPagamento;
+    
+    
+    @Override
+    public String toString(){
+        return "Codigo da venda: "+this.codigoVenda+"\nCliente: "+cliente.toString()+"\nCorretor: "+corretor.toString()+
+                "\nImovel: "+imovel.toString()+"\nData da venda: "+this.dataVenda+"Valor total da venda: "+this.valorTotalVenda+
+                "Forma de pagamento: "+formaPagamento.toString();
+    }
             
     //Constructor
 

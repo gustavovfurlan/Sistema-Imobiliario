@@ -27,7 +27,24 @@ public class Aluguel {
     private Pagamento formaPagamento;
     private ArrayList<Seguro> segurosContratados;
     private Boolean pago;
+    
+   
 
+    @Override
+    public String toString(){
+        
+        String auxiliar; //Variavel para concatenar todos os itens do ArrayList
+        
+        for(Seguro SegAux : segurosContratados){
+                    auxiliar = auxiliar.concat(segAux.toString()); 
+                }
+        
+        return "Codigo do Aluguel: "+this.codigoAluguel+ "\nCliente: "+cliente.toString()+"\nCorretor: "+corretor.toString()+
+                "\nImovel: "+imovel.toString()+"\nData do aluguel: "+this.dataAluguel+"\nData da devolucao: "+this.dataDevolucao+
+                "\nData do pagamento mensal: "+this.dataPagamentoMensal+"\nValor total do aluguel: "+this.valorTotalAluguel+
+                "\nForma de Pagamento: "+formaPagamento.toString()+"\nSeguros contratados: " +auxiliar 
+                + "Status do pagamento: " + ((pago) ? "Pago" : "Pendente");
+    }
     
     
     //Constructor
@@ -45,7 +62,6 @@ public class Aluguel {
         this.segurosContratados = new ArrayList();
         this.pago = pago;
     }
-    
     
     
     //Gets e Sets
@@ -137,6 +153,5 @@ public class Aluguel {
     public void setPago(Boolean pago) {
         this.pago = pago;
     }
-    
     
 }

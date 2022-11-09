@@ -14,7 +14,12 @@ public class ApartamentoResidencial extends Imovel {
     
     protected int andar;
     protected float valorCondominio;
-                
+    
+    @Override
+    public String toString(){
+        return super.toString() + "\nN° do andar: "+this.andar+"\nValor do Condominio: "+this.valorCondominio;
+    }
+                    
     @Override
     public float getValorAluguel(){
         return this.valorAluguel + this.valorCondominio;

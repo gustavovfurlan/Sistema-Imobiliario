@@ -18,9 +18,4 @@ public class CasaResidencial extends Imovel {
         super(codigoImovel, endereco, dataConstrucao, areaTotal, areaConstruida, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, valorIPTU, valorVenda, valorAluguel);
     }
     
-    @Override
-    public String toString(){
-        return super.toString()+"\n"
-    }
-
 }

@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imobiliaria;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 abstract class Usuario {
     
@@ -112,7 +108,13 @@ abstract class Usuario {
     
     @Override
     public String toString(){
-        return " Codigo do usuario: "+codigoUsuario+"\nNome: "+nome+"\nCPF: "+cpf+"\nRG: "+rg+
-        "\nData: "+dataNascimento+"\nEndereco: "+endereco+"\nCEP: "+cep+"\n Telefone: "+telefone+"\nTelefone: "+telefone; 
+        return "Codigo do usuario: " + codigoUsuario + "\n" + 
+                     "Nome: " + nome + "\n" + 
+                     "CPF: " + cpf + "\n" + 
+                     "RG: " + rg + "\n" +
+                     "Data: " + dataNascimento + "\n" +
+                     "Endereco: " + endereco + "\n" + 
+                     "CEP: " + cep + "\n" + 
+                     "Telefone: " + telefone;
     }
 }

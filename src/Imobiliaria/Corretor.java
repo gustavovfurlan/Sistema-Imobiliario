@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imobiliaria;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Corretor extends Usuario{
     
@@ -64,8 +60,11 @@ public class Corretor extends Usuario{
     
     @Override
     public String toString(){
-        return super.toString()+"\nCRECI: "+creci+"\nSalario: "+salario+"\nPIS: "+pis+"\nData de admissao: "+dataAdmissao;
+        return super.toString() + "\n" +
+                    "CRECI: " + creci + "\n" + 
+                    "Salario: " + salario + "\n" +
+                    "PIS: " + pis + "\n" + 
+                    "Data de admissao: " + dataAdmissao;
     }
-    
     
 }

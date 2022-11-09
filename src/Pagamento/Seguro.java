@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Pagamento;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Seguro {
     
@@ -15,6 +11,7 @@ public class Seguro {
     private String tipo;
     private String descricao;
     private float valor;
+    
     
     //Constructor
 
@@ -71,7 +68,10 @@ public class Seguro {
     
     @Override
     public String toString(){
-        return "\nCodigo do seguro: "+codigoSeguro+"\nNome da seguradora: "+nomeSeguradora+"\nTipo: "+tipo+
-        "\nDescricao: "+descricao+"\nValor: "+valor;
+        return "Codigo do seguro: " + codigoSeguro + "\n" +
+                    "Nome da seguradora: " + nomeSeguradora + "\n" + 
+                    "Tipo: " + tipo + "\n" +
+                   "Descricao: " + descricao + "\n" + 
+                   "Valor: " + valor;
     }
 }

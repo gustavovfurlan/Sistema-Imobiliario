@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imovel;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Comercial extends Imovel {
     
@@ -16,7 +12,7 @@ public class Comercial extends Imovel {
     
     @Override
     public float getValorAluguel(){
-        return this.valorAluguel + (this.valorAluguel*this.taxaImpostoFederal);
+        return this.valorAluguel + (this.valorAluguel * this.taxaImpostoFederal);
     }
     
     //Constructor

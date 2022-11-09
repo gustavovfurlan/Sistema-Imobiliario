@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Pagamento;
 
 import Imovel.Imovel;
@@ -12,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Aluguel {
     
@@ -26,24 +22,7 @@ public class Aluguel {
     private float valorTotalAluguel;
     private Pagamento formaPagamento;
     private ArrayList<Seguro> segurosContratados;
-    private Boolean pago;
-    String auxiliar; //Variavel para concatenar todos os itens do ArrayList
-   
-
-    @Override
-    public String toString(){
-        
-        
-        for(Seguro SegAux : segurosContratados){
-                    auxiliar = auxiliar.concat(SegAux.toString()); 
-                }
-        
-        return "Codigo do Aluguel: "+this.codigoAluguel+ "\nCliente: "+cliente.toString()+"\nCorretor: "+corretor.toString()+
-                "\nImovel: "+imovel.toString()+"\nData do aluguel: "+this.dataAluguel+"\nData da devolucao: "+this.dataDevolucao+
-                "\nData do pagamento mensal: "+this.dataPagamentoMensal+"\nValor total do aluguel: "+this.valorTotalAluguel+
-                "\nForma de Pagamento: "+formaPagamento.toString()+"\nSeguros contratados: " +auxiliar 
-                + "\nStatus do pagamento: " + ((pago) ? "Pago" : "Pendente");
-    }
+    private Boolean pago;   
     
     
     //Constructor
@@ -62,7 +41,7 @@ public class Aluguel {
         this.pago = pago;
     }
     
-    
+ 
     //Gets e Sets
 
     public int getCodigoAluguel() {
@@ -151,6 +130,26 @@ public class Aluguel {
 
     public void setPago(Boolean pago) {
         this.pago = pago;
+    }
+    
+        @Override
+    public String toString(){
+        String auxiliar = "";
+        for(Seguro SegAux : segurosContratados){
+                    auxiliar += SegAux.toString(); 
+                    auxiliar += "\n";
+                }
+        return "Codigo do Aluguel: " + this.codigoAluguel + "\n" + 
+                    "Cliente: " + cliente.toString() +"\n" + 
+                    "Corretor: " + corretor.toString() + "\n" + 
+                    "Imovel: " + imovel.toString() + "\n" + 
+                    "Data do aluguel: " + this.dataAluguel + "\n" + 
+                    "Data da devolucao: "+ this.dataDevolucao + "\n" +
+                    "Data do pagamento mensal: " + this.dataPagamentoMensal + "\n" + 
+                    "Valor total do aluguel: " + this.valorTotalAluguel + "\n" +
+                    "Forma de Pagamento: " + formaPagamento.toString() + "\n" + 
+                    "Seguros contratados: " + auxiliar + "\n" +
+                    "Status do pagamento: " + ((pago) ? "Pago" : "Pendente");
     }
     
 }

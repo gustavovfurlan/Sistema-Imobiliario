@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imovel;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Imovel {
     
@@ -134,9 +130,17 @@ public class Imovel {
     }
     
     public String toString(){
-        return "Codigo do imovel: "+codigoImovel+"\nEndereco: "+endereco+"\nData de construcao: "+dataConstrucao+"\n Area total: "+areaTotal+
-        "\nArea construida: "+areaConstruida+"\nQuantidade de dormitorios: "+qtdDormitorios+"\nQuantidade de banheiros: "+qtdBanheiros+
-        "\nQuantidade de vagas na garagem: "+qtdVagasGaragem+"\nValor do IPTU: "+valorIPTU+"\nValor de venda: "+valorVenda+"\nValor do aluguel: "+valorAluguel;
+        return "Codigo do imovel: " + codigoImovel + "\n" +
+                    "Endereco: " + endereco + "\n"+ 
+                    "Data de construcao: " + dataConstrucao + "\n" +
+                    "Area total: " + areaTotal + "\n" +
+                    "Area construida: " + areaConstruida + "\n" +
+                    "Quantidade de dormitorios: " + qtdDormitorios + "\n" +
+                    "Quantidade de banheiros: " + qtdBanheiros + "\n" +
+                    "Quantidade de vagas na garagem: " + qtdVagasGaragem + "\n" + 
+                    "Valor do IPTU: " + valorIPTU + "\n" + 
+                    "Valor de venda: " + valorVenda + "\n" + 
+                    "Valor do aluguel: " + valorAluguel;
     }
     
 }

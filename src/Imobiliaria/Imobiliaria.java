@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imobiliaria;
 
 import Imovel.Imovel;
@@ -12,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Imobiliaria {
     
@@ -114,9 +110,6 @@ public class Imobiliaria {
     public void setConfiguracoes(Configuracao configuracoes) {
         this.configuracoes = configuracoes;
     }
-    
-    
-    
     
 }
 

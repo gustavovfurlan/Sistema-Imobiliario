@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Pagamento;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Cartao extends Pagamento {
     
@@ -25,7 +21,10 @@ public class Cartao extends Pagamento {
     
     @Override
     public String toString(){
-        return "Tipo de pagamento: "+tipoPagamento+"\nNome: "+nome+"\nBandeira: "+bandeira+"\nNumero do cartao: "+numero;
+        return "Tipo de pagamento: "+ tipoPagamento + "\n" +
+                    "Nome: " + nome + "\n" + 
+                    "Bandeira: " + bandeira + "\n" +
+                    "Numero do cartao: " + numero;
     } 
     
 }

@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Imobiliaria;
 
 import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Cliente extends Usuario {
     
@@ -32,7 +28,8 @@ public class Cliente extends Usuario {
     }
 
     public String toString(){
-        return super.toString()+"\nData de cadastro: "+dataCadastro;
+        return super.toString() + "\n" +
+                    "Data de cadastro: " + dataCadastro;
     }
     
 }

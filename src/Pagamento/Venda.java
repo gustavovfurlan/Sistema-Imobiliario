@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Pagamento;
 
 import Imovel.Imovel;
@@ -11,7 +7,7 @@ import java.time.LocalDate;
 
 /**
  *
- * @author Gustavo
+ * @author Gabriel, Gustavo, Igor
  */
 public class Venda {
     
@@ -22,17 +18,10 @@ public class Venda {
     private LocalDate dataVenda;
     private float valorTotalVenda;
     private Pagamento formaPagamento;
-    
-    
-    @Override
-    public String toString(){
-        return "Codigo da venda: "+this.codigoVenda+"\nCliente: "+cliente.toString()+"\nCorretor: "+corretor.toString()+
-                "\nImovel: "+imovel.toString()+"\nData da venda: "+this.dataVenda+"Valor total da venda: "+this.valorTotalVenda+
-                "Forma de pagamento: "+formaPagamento.toString();
-    }
             
+    
     //Constructor
-
+    
     public Venda(int codigoVenda, Cliente cliente, Corretor corretor, Imovel imovel, LocalDate dataVenda, float valorTotalVenda, Pagamento formaPagamento) {
         this.codigoVenda = codigoVenda;
         this.cliente = cliente;
@@ -101,5 +90,14 @@ public class Venda {
         this.formaPagamento = formaPagamento;
     }
     
-    
+        @Override
+    public String toString(){
+        return "Codigo da venda: " + this.codigoVenda + "\n" +
+                    "Cliente: " + cliente.toString() + "\n" +
+                    "Corretor: " + corretor.toString( ) + "\n" +
+                    "Imovel: " + imovel.toString() + "\n" +
+                    "Data da venda: " + this.dataVenda + "\n" + 
+                    "Valor total da venda: " + this.valorTotalVenda + "\n" +
+                    "Forma de pagamento: "+ formaPagamento.toString();
+    }
 }

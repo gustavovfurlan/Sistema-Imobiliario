@@ -4,6 +4,7 @@ import Imovel.Imovel;
 import Imobiliaria.Cliente;
 import Imobiliaria.Corretor;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 /**
@@ -23,6 +24,11 @@ public class Aluguel {
     private Pagamento formaPagamento;
     private ArrayList<Seguro> segurosContratados;
     private Boolean pago;   
+    
+    
+    public float calcularValorTotal(){
+        return (this.valorTotalAluguel * dataAluguel.until(dataDevolucao, ChronoUnit.MONTHS));
+    } //Função para calcular o valor do aluguel vezes a quantidade de meses que foi alugado
     
     
     //Constructor

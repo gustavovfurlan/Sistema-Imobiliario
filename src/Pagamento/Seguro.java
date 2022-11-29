@@ -1,10 +1,12 @@
 package Pagamento;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-public class Seguro {
+public class Seguro implements Serializable{
     
     private int codigoSeguro;
     private String nomeSeguradora;

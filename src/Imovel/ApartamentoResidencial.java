@@ -27,6 +27,8 @@ public class ApartamentoResidencial extends Imovel {
         super(codigoImovel, endereco, dataConstrucao, areaTotal, areaConstruida, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, valorIPTU, valorVenda, valorAluguel);
         this.andar = andar;
         this.valorCondominio = valorCondominio;
+        alugando = true;
+        aVenda = true;
     }
     
     

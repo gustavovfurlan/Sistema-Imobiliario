@@ -1,4 +1,4 @@
-package Imobiliaria;
+package Configuracao;
 
 /**
  *
@@ -6,7 +6,7 @@ package Imobiliaria;
  */
 public class Configuracao {
     
-    private String arquivo;
+    private String arquivoAlugueis;
     private String arquivoVendas;
     private String arquivoImoveis;
     private String arquivoClientes;
@@ -16,8 +16,8 @@ public class Configuracao {
     
     //Constructor
 
-    public Configuracao(String arquivo, String arquivoVendas, String arquivoImoveis, String arquivoClientes, String arquivoCorretores, String arquivoSeguros) {
-        this.arquivo = arquivo;
+    public Configuracao(String arquivoAlugueis, String arquivoVendas, String arquivoImoveis, String arquivoClientes, String arquivoCorretores, String arquivoSeguros) {
+        this.arquivoAlugueis = arquivoAlugueis;
         this.arquivoVendas = arquivoVendas;
         this.arquivoImoveis = arquivoImoveis;
         this.arquivoClientes = arquivoClientes;
@@ -27,12 +27,12 @@ public class Configuracao {
     
     //Gets e Sets
 
-    public String getArquivo() {
-        return arquivo;
+    public String getArquivoAlugueis() {
+        return arquivoAlugueis;
     }
 
-    public void setArquivo(String arquivo) {
-        this.arquivo = arquivo;
+    public void setArquivoAlugueis(String arquivoAlugueis) {
+        this.arquivoAlugueis = arquivoAlugueis;
     }
 
     public String getArquivoVendas() {

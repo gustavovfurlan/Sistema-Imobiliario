@@ -3,13 +3,14 @@ package Pagamento;
 import Imovel.Imovel;
 import Imobiliaria.Cliente;
 import Imobiliaria.Corretor;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-public class Venda {
+public class Venda implements Serializable{
     
     private int codigoVenda;
     private Cliente cliente;

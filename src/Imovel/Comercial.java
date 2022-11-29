@@ -20,6 +20,8 @@ public class Comercial extends Imovel {
     public Comercial(int codigoImovel, String endereco, LocalDate dataConstrucao, float areaTotal, float areaConstruida, int qtdDormitorios, int qtdBanheiros, int qtdVagasGaragem, float valorIPTU, float valorVenda, float valorAluguel,float taxaImpostoFederal) {
         super(codigoImovel, endereco, dataConstrucao, areaTotal, areaConstruida, qtdDormitorios, qtdBanheiros, qtdVagasGaragem, valorIPTU, valorVenda, valorAluguel);
         this.taxaImpostoFederal = taxaImpostoFederal;
+        alugando = true;
+        aVenda = true;
     }
     
     //Get e Set

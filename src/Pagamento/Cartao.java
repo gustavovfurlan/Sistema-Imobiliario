@@ -1,10 +1,11 @@
 package Pagamento;
 
+
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-public class Cartao extends Pagamento {
+public class Cartao extends Pagamento{
     
     private String nome;
     private String bandeira;

@@ -1,10 +1,12 @@
 package Pagamento;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-abstract class Pagamento {
+public abstract class Pagamento implements Serializable{
     
     protected String tipoPagamento;
     

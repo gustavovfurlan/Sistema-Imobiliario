@@ -1,12 +1,13 @@
 package Imovel;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-public class Imovel {
+public class Imovel implements Serializable{
     
     protected int codigoImovel;
     protected String endereco;
@@ -19,6 +20,8 @@ public class Imovel {
     protected float valorIPTU;
     protected float valorVenda;
     protected float valorAluguel;
+    protected boolean alugando;
+    protected boolean aVenda;
     
     
     //Constuctors
@@ -128,6 +131,22 @@ public class Imovel {
     public void setValorAluguel(float valorAluguel) {
         this.valorAluguel = valorAluguel;
     }
+
+      public boolean isAlugando() {
+            return alugando;
+      }
+
+      public void setAlugando(boolean alugando) {
+            this.alugando = alugando;
+      }
+
+      public boolean isaVenda() {
+            return aVenda;
+      }
+
+      public void setaVenda(boolean aVenda) {
+            this.aVenda = aVenda;
+      }
     
     public String toString(){
         return "Codigo do imovel: " + codigoImovel + "\n" +
@@ -140,7 +159,9 @@ public class Imovel {
                     "Quantidade de vagas na garagem: " + qtdVagasGaragem + "\n" + 
                     "Valor do IPTU: " + valorIPTU + "\n" + 
                     "Valor de venda: " + valorVenda + "\n" + 
-                    "Valor do aluguel: " + valorAluguel;
+                    "Valor do aluguel: " + valorAluguel + "\n" +
+                    "A Venda: " + (aVenda ? "Sim" : "Não") + "\n" +
+                    "Alugando: " + (alugando ? "Sim" : "Não") + "\n";
     }
     
 }

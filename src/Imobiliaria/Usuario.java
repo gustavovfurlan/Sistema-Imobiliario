@@ -1,12 +1,13 @@
 package Imobiliaria;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
  *
  * @author Gabriel, Gustavo, Igor
  */
-abstract class Usuario {
+public abstract class Usuario implements Serializable{
     
     protected int codigoUsuario;
     protected String nome;

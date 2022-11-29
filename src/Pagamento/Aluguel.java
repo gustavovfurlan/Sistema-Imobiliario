@@ -3,6 +3,7 @@ package Pagamento;
 import Imovel.Imovel;
 import Imobiliaria.Cliente;
 import Imobiliaria.Corretor;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author Gabriel, Gustavo, Igor
  */
-public class Aluguel {
+public class Aluguel implements Serializable{
     
     private int codigoAluguel;
     private Cliente cliente;
@@ -146,16 +147,16 @@ public class Aluguel {
                     auxiliar += "\n";
                 }
         return "Codigo do Aluguel: " + this.codigoAluguel + "\n" + 
-                    "Cliente: " + cliente.toString() +"\n" + 
-                    "Corretor: " + corretor.toString() + "\n" + 
-                    "Imovel: " + imovel.toString() + "\n" + 
+                    "Cliente: " + "\n" + cliente.toString() +"\n" + 
+                    "Corretor: " + "\n" + corretor.toString() + "\n" + 
+                    "Imovel: " + "\n" + imovel.toString() + "\n" + 
                     "Data do aluguel: " + this.dataAluguel + "\n" + 
                     "Data da devolucao: "+ this.dataDevolucao + "\n" +
                     "Data do pagamento mensal: " + this.dataPagamentoMensal + "\n" + 
                     "Valor total do aluguel: " + this.valorTotalAluguel + "\n" +
-                    "Forma de Pagamento: " + formaPagamento.toString() + "\n" + 
+                    "Forma de Pagamento: " + "\n" + formaPagamento.toString() + "\n" + 
                     "Seguros contratados: " + auxiliar + "\n" +
-                    "Status do pagamento: " + ((pago) ? "Pago" : "Pendente");
+                    "Status do pagamento: " + (pago ? "Pago" : "Pendente");
     }
     
 }
